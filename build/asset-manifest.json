@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/DomesticViolence/static/css/main.c1a24007.css",
+    "main.js": "/DomesticViolence/static/js/main.74a1573c.js",
+    "static/js/453.8ab44547.chunk.js": "/DomesticViolence/static/js/453.8ab44547.chunk.js",
+    "static/media/image.jpg": "/DomesticViolence/static/media/image.1a885690063dbffa9ed3.jpg",
+    "index.html": "/DomesticViolence/index.html",
+    "main.c1a24007.css.map": "/DomesticViolence/static/css/main.c1a24007.css.map",
+    "main.74a1573c.js.map": "/DomesticViolence/static/js/main.74a1573c.js.map",
+    "453.8ab44547.chunk.js.map": "/DomesticViolence/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1a24007.css",
+    "static/js/main.74a1573c.js"
+  ]
+}

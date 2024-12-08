@@ -1,0 +1,243 @@
+.admin-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #3a3f47, #2d3136);
+  color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  border-right: 1px solid #1f2225;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.sidebar-header h2 {
+  color: #64ffda;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  width: 100%;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  padding: 10px 18px;
+  color: #f9fafb;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.menu li a:hover {
+  background: linear-gradient(90deg, #64ffda, #52d0c4);
+  color: #2d3136;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menu li a svg {
+  margin-right: 12px;
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+.menu li a:hover svg {
+  transform: scale(1.2);
+}
+
+.admin-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #f9fafb;
+  margin-left: 240px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.admin-name {
+  font-size: 16px;
+  color: #2d3136;
+  font-weight: 700;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.logout-button:hover {
+  color: #d65a5a;
+  transform: scale(1.1);
+}
+
+.metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.metric-item {
+  flex: 1 1 calc(50% - 20px);
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.metric-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.metric-item h3 {
+  margin: 0 0 10px;
+  color: #2d3136;
+  font-size: 18px;
+}
+
+.metric-item p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #64ffda;
+}
+
+button {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #64ffda, #52d0c4);
+  color: #2d3136;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #52d0c4, #64ffda);
+  transform: scale(1.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background: #3a3f47;
+  color: #f9fafb;
+}
+
+table td button {
+  margin-right: 10px;
+}
+
+.add-new-resource-container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.add-new-resource-container h3 {
+  font-size: 20px;
+  color: #2d3136;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.add-new-resource-container label {
+  font-weight: 600;
+  color: #2d3136;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.add-new-resource-container input,
+.add-new-resource-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.add-new-resource-container button {
+  background: linear-gradient(90deg, #64ffda, #52d0c4);
+  color: white;
+  padding: 10px 15px;
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.add-new-resource-container button:hover {
+  background: linear-gradient(90deg, #52d0c4, #64ffda);
+  transform: scale(1.05);
+}
